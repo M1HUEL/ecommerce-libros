@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gestionar catálogo · Librería Raudskinna</title>
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body>
+    <header class="encabezado">
+      <div class="contenedor">
+        <a class="logo" href="index.html"
+          ><img src="img/logo.png" alt="Librería Raudskinna"
+        /></a>
+        <nav aria-label="Administración">
+          <ul class="menu">
+            <li><a href="panel-admin.html">Panel</a></li>
+            <li>
+              <a href="admin-libros.html" aria-current="page"
+                >Libros e inventario</a
+              >
+            </li>
+            <li><a href="#">Órdenes</a></li>
+            <li><a href="catalogo.html">Catálogo público</a></li>
+            <li><a href="#">Cerrar sesión</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="contenedor">
+      <div class="encabezado-pagina">
+        <h1>Gestionar catálogo</h1>
+        <p>Consulta libros, edita su información y ajusta existencias.</p>
+      </div>
+
+      <form class="filtros filtros-admin" role="search">
+        <input
+          class="campo campo-busqueda"
+          type="search"
+          placeholder="Buscar por título o autor"
+          aria-label="Buscar por título o autor"
+        />
+        <a class="boton boton-primario" href="#">Nuevo libro</a>
+        <button class="campo filtro" type="button" aria-pressed="true">
+          Todos
+        </button>
+        <button class="campo filtro" type="button" aria-pressed="false">
+          Stock bajo
+        </button>
+        <button class="campo filtro" type="button" aria-pressed="false">
+          Sin stock
+        </button>
+      </form>
+
+      <div class="tabla-contenedor tabla-admin">
+        <table class="tabla">
+          <thead>
+            <tr>
+              <th scope="col">Libro</th>
+              <th scope="col">Autor</th>
+              <th scope="col">Precio</th>
+              <th scope="col">Stock</th>
+              <th scope="col">Estado</th>
+              <th scope="col"><span class="sr-only">Acciones</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="orden-id">Dune</td>
+              <td>Frank Herbert</td>
+              <td>$349.00</td>
+              <td>12</td>
+              <td class="estado-stock estado-disponible">Disponible</td>
+              <td><a class="enlace-detalle" href="#">Editar</a></td>
+            </tr>
+            <tr>
+              <td class="orden-id">El Hobbit</td>
+              <td>J. R. R. Tolkien</td>
+              <td>$299.00</td>
+              <td>3</td>
+              <td class="estado-stock estado-bajo">Stock bajo</td>
+              <td><a class="enlace-detalle" href="#">Editar</a></td>
+            </tr>
+            <tr>
+              <td class="orden-id">1984</td>
+              <td>George Orwell</td>
+              <td>$249.00</td>
+              <td>0</td>
+              <td class="estado-stock estado-agotado">Sin stock</td>
+              <td><a class="enlace-detalle" href="#">Editar</a></td>
+            </tr>
+            <tr>
+              <td class="orden-id">Drácula</td>
+              <td>Bram Stoker</td>
+              <td>$279.00</td>
+              <td>8</td>
+              <td class="estado-stock estado-disponible">Disponible</td>
+              <td><a class="enlace-detalle" href="#">Editar</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <footer class="pie">
+      <div class="contenedor">
+        <span>Librería Raudskinna · Administración</span>
+        <nav aria-label="Pie de página">
+          <a href="panel-admin.html">Panel</a> ·
+          <a href="admin-libros.html">Libros</a> · <a href="#">Órdenes</a> ·
+          <a href="#">Cerrar sesión</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

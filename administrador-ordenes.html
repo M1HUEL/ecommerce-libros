@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gestionar órdenes · Librería Raudskinna</title>
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body>
+    <header class="encabezado">
+      <div class="contenedor">
+        <a class="logo" href="index.html"
+          ><img src="img/logo.png" alt="Librería Raudskinna"
+        /></a>
+        <nav aria-label="Administración">
+          <ul class="menu">
+            <li><a href="panel-admin.html">Panel</a></li>
+            <li><a href="admin-libros.html">Libros e inventario</a></li>
+            <li>
+              <a href="admin-ordenes.html" aria-current="page">Órdenes</a>
+            </li>
+            <li><a href="catalogo.html">Catálogo público</a></li>
+            <li><a href="#">Cerrar sesión</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="contenedor">
+      <div class="encabezado-pagina">
+        <p class="sobretitulo">Administración</p>
+        <h1>Gestionar órdenes</h1>
+        <p>
+          Consulta pedidos y actualiza su estado según el avance de cada orden.
+        </p>
+      </div>
+
+      <div class="filtros" role="group" aria-label="Filtrar órdenes">
+        <button class="campo filtro" type="button" aria-pressed="true">
+          Todos
+        </button>
+        <button class="campo filtro" type="button" aria-pressed="false">
+          Pendientes
+        </button>
+        <button class="campo filtro" type="button" aria-pressed="false">
+          En curso
+        </button>
+      </div>
+
+      <div class="tabla-contenedor tabla-admin">
+        <table class="tabla tabla-ordenes">
+          <thead>
+            <tr>
+              <th scope="col">Orden</th>
+              <th scope="col">Fecha</th>
+              <th scope="col">Cliente</th>
+              <th scope="col">Productos</th>
+              <th scope="col">Estado</th>
+              <th scope="col">Total</th>
+              <th scope="col">Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="orden-id">#10025</td>
+              <td>04 oct 2026</td>
+              <td>Ana López</td>
+              <td>Dune · El Hobbit</td>
+              <td class="estado">Pendiente</td>
+              <td>$648.00</td>
+              <td>
+                <div class="acciones-tabla">
+                  <button class="boton boton-primario" type="button">
+                    Procesar orden
+                  </button>
+                  <button class="boton boton-claro" type="button">
+                    Cancelar
+                  </button>
+                  <a class="boton boton-primario" href="detalle-pedido.html"
+                    >Ver datos</a
+                  >
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="orden-id">#10024</td>
+              <td>03 oct 2026</td>
+              <td>Luis García</td>
+              <td>1984</td>
+              <td class="estado">Procesando</td>
+              <td>$249.00</td>
+              <td>
+                <div class="acciones-tabla">
+                  <button class="boton boton-primario" type="button">
+                    Marcar enviada
+                  </button>
+                  <button class="boton boton-claro" type="button">
+                    Cancelar
+                  </button>
+                  <a class="boton boton-primario" href="#">Ver datos</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="orden-id">#10019</td>
+              <td>26 sep 2026</td>
+              <td>María Soto</td>
+              <td>Drácula</td>
+              <td class="estado">Enviado</td>
+              <td>$279.00</td>
+              <td>
+                <div class="acciones-tabla">
+                  <button class="boton boton-primario" type="button">
+                    Marcar entregada
+                  </button>
+                  <a class="boton boton-primario" href="#">Ver datos</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="orden-id">#10011</td>
+              <td>14 sep 2026</td>
+              <td>Carlos Ruiz</td>
+              <td>Dune</td>
+              <td class="estado estado-entregado">Entregado</td>
+              <td>$349.00</td>
+              <td>
+                <div class="acciones-tabla">
+                  <span class="pildora-final">Estado final</span>
+                  <a class="boton boton-primario" href="#">Ver datos</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="orden-id">#10005</td>
+              <td>08 sep 2026</td>
+              <td>Sofía Díaz</td>
+              <td>Fundación</td>
+              <td class="estado estado-cancelado">Cancelado</td>
+              <td>$319.00</td>
+              <td>
+                <div class="acciones-tabla">
+                  <span class="pildora-final">Estado final</span>
+                  <a class="boton boton-primario" href="#">Ver datos</a>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <footer class="pie">
+      <div class="contenedor">
+        <span>Librería Raudskinna · Administración</span>
+        <nav aria-label="Pie de página">
+          <a href="panel-admin.html">Panel</a> ·
+          <a href="admin-libros.html">Libros</a> ·
+          <a href="admin-ordenes.html">Órdenes</a> ·
+          <a href="#">Cerrar sesión</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mis órdenes · Librería Raudskinna</title>
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body>
+    <header class="encabezado">
+      <div class="contenedor">
+        <a class="logo" href="index.html"
+          ><img src="img/logo.png" alt="Librería Raudskinna"
+        /></a>
+        <nav aria-label="Principal">
+          <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="#">Mi cuenta</a></li>
+            <li>
+              <a href="mis-ordenes.html" aria-current="page">Mis órdenes</a>
+            </li>
+            <li><a href="carrito.html">Carrito</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="contenedor">
+      <div class="encabezado-pagina">
+        <h1>Historial de órdenes</h1>
+        <p>Consulta el estado y resumen de tus compras recientes.</p>
+      </div>
+
+      <div class="tabla-contenedor">
+        <table class="tabla">
+          <thead>
+            <tr>
+              <th scope="col">Orden</th>
+              <th scope="col">Fecha</th>
+              <th scope="col">Productos</th>
+              <th scope="col">Estado</th>
+              <th scope="col">Total</th>
+              <th scope="col"><span class="sr-only">Acciones</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="orden-id">#10025</td>
+              <td>04 oct 2026</td>
+              <td>Dune · El Hobbit</td>
+              <td class="estado">Pendiente</td>
+              <td>$648.00</td>
+              <td>
+                <a class="enlace-detalle" href="detalle-pedido.html"
+                  >Ver detalle</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="orden-id">#10018</td>
+              <td>26 sep 2026</td>
+              <td>Drácula</td>
+              <td class="estado">Entregado</td>
+              <td>$279.00</td>
+              <td><a class="enlace-detalle" href="#">Ver detalle</a></td>
+            </tr>
+            <tr>
+              <td class="orden-id">#10010</td>
+              <td>14 sep 2026</td>
+              <td>Dune</td>
+              <td class="estado">Procesando</td>
+              <td>$349.00</td>
+              <td><a class="enlace-detalle" href="#">Ver detalle</a></td>
+            </tr>
+            <tr>
+              <td class="orden-id">#10004</td>
+              <td>08 sep 2026</td>
+              <td>Fundación</td>
+              <td class="estado">Cancelado</td>
+              <td>$319.00</td>
+              <td><a class="enlace-detalle" href="#">Ver detalle</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <footer class="pie">
+      <div class="contenedor">
+        <span>Librería Raudskinna</span>
+        <nav aria-label="Pie de página">
+          <a href="index.html">Inicio</a> ·
+          <a href="catalogo.html">Catálogo</a> ·
+          <a href="mis-ordenes.html">Mis órdenes</a> ·
+          <a href="#">Cerrar sesión</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

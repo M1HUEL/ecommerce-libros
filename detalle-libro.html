@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dune · Librería Raudskinna</title>
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body>
+    <header class="encabezado">
+      <div class="contenedor">
+        <a class="logo" href="index.html"
+          ><img src="img/logo.png" alt="Librería Raudskinna"
+        /></a>
+        <nav aria-label="Principal">
+          <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="catalogo.html" aria-current="page">Catálogo</a></li>
+            <li><a href="#">Cuenta</a></li>
+            <li><a href="#">Mis órdenes</a></li>
+            <li><a href="#">Carrito</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="contenedor">
+      <article class="detalle">
+        <div class="portada">PORTADA</div>
+
+        <div class="detalle-info">
+          <span class="etiqueta-disponible">Disponible</span>
+          <h1>Dune</h1>
+          <p class="detalle-autor">Frank Herbert</p>
+
+          <div class="detalle-datos">
+            <p>Editorial: Debolsillo</p>
+            <p>Categoría: Ciencia ficción</p>
+            <p>ISBN: 978-607-XXX-XXXX</p>
+          </div>
+
+          <p class="precio-grande">$349.00</p>
+
+          <div class="cantidad">
+            <button
+              class="cantidad-boton"
+              type="button"
+              aria-label="Disminuir cantidad"
+              data-paso="-1"
+            >
+              −
+            </button>
+            <span class="cantidad-valor" aria-live="polite">1</span>
+            <button
+              class="cantidad-boton"
+              type="button"
+              aria-label="Aumentar cantidad"
+              data-paso="1"
+            >
+              +
+            </button>
+          </div>
+
+          <button class="boton boton-primario" type="button">
+            Agregar al carrito
+          </button>
+
+          <section class="descripcion">
+            <h2>Descripción</h2>
+            <p>
+              En un futuro lejano, las casas nobles compiten por el control de
+              Arrakis, el único planeta donde se produce la especia.
+            </p>
+          </section>
+        </div>
+      </article>
+    </main>
+
+    <footer class="pie">
+      <div class="contenedor">
+        <span>Librería Raudskinna</span>
+        <nav aria-label="Pie de página">
+          <a href="index.html">Inicio</a> ·
+          <a href="catalogo.html">Catálogo</a> · <a href="#">Carrito</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

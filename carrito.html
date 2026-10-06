@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tu carrito · Librería Raudskinna</title>
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body>
+    <header class="encabezado">
+      <div class="contenedor">
+        <a class="logo" href="index.html"
+          ><img src="img/logo.png" alt="Librería Raudskinna"
+        /></a>
+        <nav aria-label="Principal">
+          <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="#">Cuenta</a></li>
+            <li><a href="#">Mis órdenes</a></li>
+            <li><a href="carrito.html" aria-current="page">Carrito</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="contenedor">
+      <div class="encabezado-pagina">
+        <h1>Tu carrito</h1>
+        <p>Revisa los libros seleccionados antes de continuar.</p>
+      </div>
+
+      <div class="carrito">
+        <ul class="carrito-lista">
+          <li class="item-carrito" data-precio="349">
+            <div class="portada">PORTADA</div>
+            <div>
+              <h3>Dune</h3>
+              <p class="autor">Frank Herbert</p>
+              <p class="precio">$349.00</p>
+              <div class="cantidad">
+                <button
+                  class="cantidad-boton"
+                  type="button"
+                  aria-label="Disminuir cantidad"
+                  data-paso="-1"
+                >
+                  −
+                </button>
+                <span class="cantidad-valor" aria-live="polite">1</span>
+                <button
+                  class="cantidad-boton"
+                  type="button"
+                  aria-label="Aumentar cantidad"
+                  data-paso="1"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+            <button class="boton boton-claro" type="button" data-eliminar>
+              Eliminar
+            </button>
+          </li>
+          <li class="item-carrito" data-precio="299">
+            <div class="portada">PORTADA</div>
+            <div>
+              <h3>El Hobbit</h3>
+              <p class="autor">J. R. R. Tolkien</p>
+              <p class="precio">$299.00</p>
+              <div class="cantidad">
+                <button
+                  class="cantidad-boton"
+                  type="button"
+                  aria-label="Disminuir cantidad"
+                  data-paso="-1"
+                >
+                  −
+                </button>
+                <span class="cantidad-valor" aria-live="polite">1</span>
+                <button
+                  class="cantidad-boton"
+                  type="button"
+                  aria-label="Aumentar cantidad"
+                  data-paso="1"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+            <button class="boton boton-claro" type="button" data-eliminar>
+              Eliminar
+            </button>
+          </li>
+        </ul>
+
+        <aside class="resumen">
+          <h2>Resumen de compra</h2>
+          <div class="resumen-fila">
+            <span>Subtotal</span><span id="subtotal">$648.00</span>
+          </div>
+          <div class="resumen-fila">
+            <span>Envío</span><span>Sin costo</span>
+          </div>
+          <div class="resumen-fila resumen-total">
+            <span>Total</span><span id="total">$648.00</span>
+          </div>
+          <button class="boton boton-primario" type="button">
+            Continuar al checkout
+          </button>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="pie">
+      <div class="contenedor">
+        <span>Librería Raudskinna</span>
+        <nav aria-label="Pie de página">
+          <a href="index.html">Inicio</a> ·
+          <a href="catalogo.html">Catálogo</a> ·
+          <a href="carrito.html">Carrito</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Formulario de libro · Librería Raudskinna</title>
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body>
+    <header class="encabezado">
+      <div class="contenedor">
+        <a class="logo" href="index.html"
+          ><img src="img/logo.png" alt="Librería Raudskinna"
+        /></a>
+        <nav aria-label="Administración">
+          <ul class="menu">
+            <li><a href="panel-admin.html">Panel</a></li>
+            <li>
+              <a href="admin-libros.html" aria-current="page"
+                >Libros e inventario</a
+              >
+            </li>
+            <li><a href="#">Órdenes</a></li>
+            <li><a href="catalogo.html">Catálogo público</a></li>
+            <li><a href="#">Cerrar sesión</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="contenedor">
+      <div class="encabezado-pagina">
+        <h1>Formulario de libro</h1>
+        <p class="formulario-modo">Nuevo libro / Editar libro</p>
+        <p>
+          Se utiliza el mismo formulario. En edición, los campos se muestran
+          precargados.
+        </p>
+      </div>
+
+      <section class="panel panel-libro">
+        <form class="formulario-libro" action="admin-libros.html">
+          <div class="formulario-columna">
+            <div class="formulario-grupo">
+              <label for="titulo">Título</label>
+              <input
+                class="campo campo-formulario"
+                id="titulo"
+                name="titulo"
+                type="text"
+                placeholder="Ej. Dune"
+                required
+              />
+            </div>
+            <div class="formulario-grupo">
+              <label for="autor">Autor</label>
+              <input
+                class="campo campo-formulario"
+                id="autor"
+                name="autor"
+                type="text"
+                placeholder="Ej. Frank Herbert"
+                required
+              />
+            </div>
+            <div class="formulario-grupo">
+              <label for="editorial">Editorial</label>
+              <input
+                class="campo campo-formulario"
+                id="editorial"
+                name="editorial"
+                type="text"
+                placeholder="Ej. Debolsillo"
+              />
+            </div>
+            <div class="formulario-grupo">
+              <label for="categoria">Categoría</label>
+              <select
+                class="campo campo-formulario"
+                id="categoria"
+                name="categoria"
+                required
+              >
+                <option value="" selected disabled>
+                  Seleccionar categoría
+                </option>
+                <option>Ficción</option>
+                <option>Fantasía</option>
+                <option>Terror</option>
+                <option>Ciencia ficción</option>
+              </select>
+            </div>
+            <div class="formulario-grupo">
+              <label for="isbn">ISBN</label>
+              <input
+                class="campo campo-formulario"
+                id="isbn"
+                name="isbn"
+                type="text"
+                placeholder="Ej. 978-..."
+              />
+            </div>
+          </div>
+
+          <div class="formulario-columna">
+            <div class="formulario-grupo">
+              <label for="precio">Precio</label>
+              <input
+                class="campo campo-formulario"
+                id="precio"
+                name="precio"
+                type="number"
+                min="0"
+                step="0.01"
+                placeholder="$ 0.00"
+                required
+              />
+            </div>
+            <div class="formulario-grupo">
+              <label for="stock">Stock</label>
+              <input
+                class="campo campo-formulario"
+                id="stock"
+                name="stock"
+                type="number"
+                min="0"
+                step="1"
+                placeholder="0"
+                required
+              />
+            </div>
+            <div class="formulario-grupo">
+              <label for="descripcion">Descripción</label>
+              <textarea
+                class="campo campo-formulario"
+                id="descripcion"
+                name="descripcion"
+                rows="3"
+                placeholder="Descripción breve del libro"
+              ></textarea>
+            </div>
+            <div class="formulario-grupo">
+              <label for="portada">Portada</label>
+              <input
+                class="campo campo-formulario"
+                id="portada"
+                name="portada"
+                type="file"
+                accept="image/jpeg,image/png"
+              />
+            </div>
+          </div>
+
+          <div class="acciones">
+            <button class="boton boton-primario" type="submit">
+              Guardar libro / cambios
+            </button>
+            <a class="boton boton-claro" href="admin-libros.html">Cancelar</a>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="pie">
+      <div class="contenedor">
+        <span>Librería Raudskinna · Administración</span>
+        <nav aria-label="Pie de página">
+          <a href="panel-admin.html">Panel</a> ·
+          <a href="admin-libros.html">Libros</a> · <a href="#">Órdenes</a> ·
+          <a href="#">Cerrar sesión</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

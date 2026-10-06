@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Confirmar compra · Librería Raudskinna</title>
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body>
+    <header class="encabezado">
+      <div class="contenedor">
+        <a class="logo" href="index.html"
+          ><img src="img/logo.png" alt="Librería Raudskinna"
+        /></a>
+        <nav aria-label="Principal">
+          <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="#">Mi cuenta</a></li>
+            <li><a href="#">Mis órdenes</a></li>
+            <li><a href="carrito.html" aria-current="page">Carrito</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="contenedor">
+      <div class="encabezado-pagina">
+        <h1>Confirmar compra</h1>
+        <p>Completa los datos necesarios para generar tu orden.</p>
+      </div>
+
+      <div class="checkout">
+        <section class="panel">
+          <h2>Datos de entrega</h2>
+          <form class="formulario" id="form-entrega">
+            <label for="nombre">Nombre completo</label>
+            <input
+              class="campo campo-formulario"
+              id="nombre"
+              name="nombre"
+              type="text"
+              placeholder="Ej. Ana López"
+              autocomplete="name"
+              required
+            />
+
+            <label for="direccion">Dirección</label>
+            <input
+              class="campo campo-formulario"
+              id="direccion"
+              name="direccion"
+              type="text"
+              placeholder="Calle, número y colonia"
+              autocomplete="street-address"
+              required
+            />
+
+            <label for="ciudad">Ciudad</label>
+            <input
+              class="campo campo-formulario"
+              id="ciudad"
+              name="ciudad"
+              type="text"
+              placeholder="Ciudad"
+              autocomplete="address-level2"
+              required
+            />
+
+            <label for="telefono">Teléfono</label>
+            <input
+              class="campo campo-formulario"
+              id="telefono"
+              name="telefono"
+              type="tel"
+              placeholder="Número de contacto"
+              autocomplete="tel"
+              required
+            />
+
+            <label>Método de pago</label>
+            <p class="metodo-pago">
+              Pago al confirmar la orden · Simulación académica
+            </p>
+          </form>
+        </section>
+
+        <aside class="resumen">
+          <h2>Resumen de la orden</h2>
+          <div class="resumen-fila">
+            <span>Dune × 1</span><span>$349.00</span>
+          </div>
+          <div class="resumen-fila">
+            <span>El Hobbit × 1</span><span>$299.00</span>
+          </div>
+          <div class="resumen-fila">
+            <span>Subtotal</span><span>$648.00</span>
+          </div>
+          <div class="resumen-fila">
+            <span>Envío</span><span>Sin costo</span>
+          </div>
+          <div class="resumen-fila resumen-total">
+            <span>Total</span><span>$648.00</span>
+          </div>
+          <button
+            class="boton boton-primario"
+            type="submit"
+            form="form-entrega"
+          >
+            Confirmar orden
+          </button>
+          <p class="nota">Revisa tus datos antes de confirmar.</p>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="pie">
+      <div class="contenedor">
+        <span>Librería Raudskinna</span>
+        <nav aria-label="Pie de página">
+          <a href="index.html">Inicio</a> ·
+          <a href="catalogo.html">Catálogo</a> · <a href="#">Mis órdenes</a> ·
+          <a href="#">Cerrar sesión</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
