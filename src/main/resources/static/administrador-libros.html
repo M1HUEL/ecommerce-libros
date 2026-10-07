@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Gestionar catálogo · Librería Raudskinna</title>
-    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
     <header class="encabezado">
@@ -14,15 +14,15 @@
         /></a>
         <nav aria-label="Administración">
           <ul class="menu">
-            <li><a href="panel-admin.html">Panel</a></li>
+            <li><a href="panel-administrativo.html">Panel</a></li>
             <li>
-              <a href="admin-libros.html" aria-current="page"
+              <a href="administrador-libros.html" aria-current="page"
                 >Libros e inventario</a
               >
             </li>
-            <li><a href="#">Órdenes</a></li>
+            <li><a href="administrador-ordenes.html">Órdenes</a></li>
             <li><a href="catalogo.html">Catálogo público</a></li>
-            <li><a href="#">Cerrar sesión</a></li>
+            <li><a href="index.html">Cerrar sesión</a></li>
           </ul>
         </nav>
       </div>
@@ -41,7 +41,9 @@
           placeholder="Buscar por título o autor"
           aria-label="Buscar por título o autor"
         />
-        <a class="boton boton-primario" href="#">Nuevo libro</a>
+        <a class="boton boton-primario" href="administrador-libros-formulario.html">
+          Nuevo libro
+        </a>
         <button class="campo filtro" type="button" aria-pressed="true">
           Todos
         </button>
@@ -59,8 +61,8 @@
             <tr>
               <th scope="col">Libro</th>
               <th scope="col">Autor</th>
-              <th scope="col">Precio</th>
-              <th scope="col">Stock</th>
+              <th scope="col">Precio desde</th>
+              <th scope="col">Existencias físicas</th>
               <th scope="col">Estado</th>
               <th scope="col"><span class="sr-only">Acciones</span></th>
             </tr>
@@ -72,7 +74,11 @@
               <td>$349.00</td>
               <td>12</td>
               <td class="estado-stock estado-disponible">Disponible</td>
-              <td><a class="enlace-detalle" href="#">Editar</a></td>
+              <td>
+                <a class="enlace-detalle" href="administrador-libros-formulario.html">
+                  Editar
+                </a>
+              </td>
             </tr>
             <tr>
               <td class="orden-id">El Hobbit</td>
@@ -80,7 +86,9 @@
               <td>$299.00</td>
               <td>3</td>
               <td class="estado-stock estado-bajo">Stock bajo</td>
-              <td><a class="enlace-detalle" href="#">Editar</a></td>
+              <td><a class="enlace-detalle" href="administrador-libros-formulario.html">
+                Editar
+              </a></td>
             </tr>
             <tr>
               <td class="orden-id">1984</td>
@@ -88,7 +96,9 @@
               <td>$249.00</td>
               <td>0</td>
               <td class="estado-stock estado-agotado">Sin stock</td>
-              <td><a class="enlace-detalle" href="#">Editar</a></td>
+              <td><a class="enlace-detalle" href="administrador-libros-formulario.html">
+                Editar
+              </a></td>
             </tr>
             <tr>
               <td class="orden-id">Drácula</td>
@@ -96,7 +106,9 @@
               <td>$279.00</td>
               <td>8</td>
               <td class="estado-stock estado-disponible">Disponible</td>
-              <td><a class="enlace-detalle" href="#">Editar</a></td>
+              <td><a class="enlace-detalle" href="administrador-libros-formulario.html">
+                Editar
+              </a></td>
             </tr>
           </tbody>
         </table>
@@ -107,9 +119,10 @@
       <div class="contenedor">
         <span>Librería Raudskinna · Administración</span>
         <nav aria-label="Pie de página">
-          <a href="panel-admin.html">Panel</a> ·
-          <a href="admin-libros.html">Libros</a> · <a href="#">Órdenes</a> ·
-          <a href="#">Cerrar sesión</a>
+          <a href="panel-administrativo.html">Panel</a> ·
+          <a href="administrador-libros.html">Libros</a> ·
+          <a href="administrador-ordenes.html">Órdenes</a> ·
+          <a href="index.html">Cerrar sesión</a>
         </nav>
       </div>
     </footer>

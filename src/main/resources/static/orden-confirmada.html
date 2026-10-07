@@ -4,20 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Orden confirmada · Librería Raudskinna</title>
-    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
     <header class="encabezado">
       <div class="contenedor">
-        <a class="logo" href="index.html"
-          ><img src="img/logo.png" alt="Librería Raudskinna"
-        /></a>
+        <a class="logo" href="index.html">
+          <img src="img/logo.png" alt="Librería Raudskinna"/>
+        </a>
         <nav aria-label="Principal">
           <ul class="menu">
             <li><a href="index.html">Inicio</a></li>
             <li><a href="catalogo.html">Catálogo</a></li>
-            <li><a href="#">Mi cuenta</a></li>
-            <li><a href="#" aria-current="page">Mis órdenes</a></li>
+            <li><a href="iniciar-sesion.html">Mi cuenta</a></li>
+            <li><a href="mis-ordenes.html">Mis órdenes</a></li>
             <li><a href="carrito.html">Carrito</a></li>
           </ul>
         </nav>
@@ -28,6 +28,12 @@
       <section class="panel confirmacion">
         <h1>¡Gracias por tu compra!</h1>
         <p class="confirmacion-texto">Tu orden fue registrada correctamente.</p>
+        <p>
+          Pago APROBADO. Los libros físicos se prepararán para envío;
+          los digitales quedarán disponibles para descarga.
+          Consulta el seguimiento desde Mis órdenes.
+        </p>
+
         <p class="orden-numero">Orden #10025</p>
 
         <h2>Resumen de la orden</h2>
@@ -51,7 +57,9 @@
         </p>
 
         <div class="acciones">
-          <a class="boton boton-primario" href="#">Ir a Mis órdenes</a>
+          <a class="boton boton-primario" href="mis-ordenes.html">
+            Ir a Mis órdenes
+          </a>
           <a class="boton boton-claro" href="index.html">Volver al inicio</a>
         </div>
       </section>
@@ -62,8 +70,9 @@
         <span>Librería Raudskinna</span>
         <nav aria-label="Pie de página">
           <a href="index.html">Inicio</a> ·
-          <a href="catalogo.html">Catálogo</a> · <a href="#">Mis órdenes</a> ·
-          <a href="#">Cerrar sesión</a>
+          <a href="catalogo.html">Catálogo</a> ·
+          <a href="mis-ordenes.html">Mis órdenes</a> ·
+          <a href="index.html">Cerrar sesión</a>
         </nav>
       </div>
     </footer>

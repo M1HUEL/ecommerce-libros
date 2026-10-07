@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Orden #10025 · Librería Raudskinna</title>
-    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
     <header class="encabezado">
@@ -16,8 +16,8 @@
           <ul class="menu">
             <li><a href="index.html">Inicio</a></li>
             <li><a href="catalogo.html">Catálogo</a></li>
-            <li><a href="#">Mi cuenta</a></li>
-            <li><a href="#" aria-current="page">Mis órdenes</a></li>
+            <li><a href="iniciar-sesion.html">Mi cuenta</a></li>
+            <li><a href="mis-ordenes.html">Mis órdenes</a></li>
             <li><a href="carrito.html">Carrito</a></li>
           </ul>
         </nav>
@@ -43,10 +43,15 @@
           </div>
         </div>
 
-        <h2>Datos de entrega</h2>
-        <p class="pedido-datos">
-          Ana López · Av. Ejemplo 123, Ciudad Obregón · Tel. 644 000 0000
-        </p>
+        <section class="detalle-entrega">
+          <h2>Entrega y pago</h2>
+
+          <p><strong>Dirección:</strong> Av. Principal 123, Col. Centro</p>
+          <p><strong>Teléfono:</strong> 644 123 4567</p>
+          <p><strong>Pago:</strong> APROBADO · Tarjeta / transferencia</p>
+          <p><strong>Paquetería:</strong> DHL</p>
+          <p><strong>Número de rastreo:</strong> DHL-RAUD-10025</p>
+        </section>
 
         <p class="nota">
           Puedes cancelar mientras el estado sea PENDIENTE o PROCESANDO. Una vez
@@ -57,7 +62,9 @@
           <button class="boton boton-claro" type="button">
             Cancelar pedido
           </button>
-          <a class="boton boton-primario" href="#">Volver a Mis órdenes</a>
+          <a class="boton boton-primario" href="mis-ordenes.html">
+            Volver a Mis órdenes
+          </a>
         </div>
       </article>
     </main>
@@ -67,8 +74,9 @@
         <span>Librería Raudskinna</span>
         <nav aria-label="Pie de página">
           <a href="index.html">Inicio</a> ·
-          <a href="catalogo.html">Catálogo</a> · <a href="#">Mis órdenes</a> ·
-          <a href="#">Cerrar sesión</a>
+          <a href="catalogo.html">Catálogo</a> ·
+          <a href="mis-ordenes.html">Mis órdenes</a> ·
+          <a href="index.html">Cerrar sesión</a>
         </nav>
       </div>
     </footer>

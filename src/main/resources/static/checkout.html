@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Confirmar compra · Librería Raudskinna</title>
-    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
     <header class="encabezado">
@@ -16,8 +16,8 @@
           <ul class="menu">
             <li><a href="index.html">Inicio</a></li>
             <li><a href="catalogo.html">Catálogo</a></li>
-            <li><a href="#">Mi cuenta</a></li>
-            <li><a href="#">Mis órdenes</a></li>
+            <li><a href="iniciar-sesion.html">Mi cuenta</a></li>
+            <li><a href="mis-ordenes.html">Mis órdenes</a></li>
             <li><a href="carrito.html" aria-current="page">Carrito</a></li>
           </ul>
         </nav>
@@ -32,7 +32,7 @@
 
       <div class="checkout">
         <section class="panel">
-          <h2>Datos de entrega</h2>
+          <h2>Datos de entrega · Solo formatos físicos</h2>
           <form class="formulario" id="form-entrega">
             <label for="nombre">Nombre completo</label>
             <input
@@ -80,7 +80,7 @@
 
             <label>Método de pago</label>
             <p class="metodo-pago">
-              Pago al confirmar la orden · Simulación académica
+              Tarjeta / transferencia
             </p>
           </form>
         </section>
@@ -102,13 +102,9 @@
           <div class="resumen-fila resumen-total">
             <span>Total</span><span>$648.00</span>
           </div>
-          <button
-            class="boton boton-primario"
-            type="submit"
-            form="form-entrega"
-          >
+          <a class="boton boton-primario" href="orden-confirmada.html">
             Confirmar orden
-          </button>
+          </a>
           <p class="nota">Revisa tus datos antes de confirmar.</p>
         </aside>
       </div>
@@ -119,8 +115,9 @@
         <span>Librería Raudskinna</span>
         <nav aria-label="Pie de página">
           <a href="index.html">Inicio</a> ·
-          <a href="catalogo.html">Catálogo</a> · <a href="#">Mis órdenes</a> ·
-          <a href="#">Cerrar sesión</a>
+          <a href="catalogo.html">Catálogo</a> ·
+          <a href="mis-ordenes.html">Mis órdenes</a> ·
+          <a href="index.html">Cerrar sesión</a>
         </nav>
       </div>
     </footer>

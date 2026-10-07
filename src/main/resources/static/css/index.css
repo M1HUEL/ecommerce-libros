@@ -235,6 +235,14 @@ h3 {
   font-size: 0.8125rem;
   color: var(--color-secundario);
 }
+
+.detalle-formato {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 12px 0;
+}
+
 .precio {
   font-weight: 700;
   margin: 6px 0 8px;
@@ -911,4 +919,21 @@ select.campo-formulario {
     var(--color-secundario) 12%,
     var(--color-fondo)
   );
+}
+
+.boton-alta {
+  align-self: flex-start;
+  margin-top: 6px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--color-primario);
+  font: inherit;
+  font-size: 0.8125rem;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.boton-alta:hover {
+  color: var(--color-acento);
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Mis órdenes · Librería Raudskinna</title>
-    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
     <header class="encabezado">
@@ -16,7 +16,7 @@
           <ul class="menu">
             <li><a href="index.html">Inicio</a></li>
             <li><a href="catalogo.html">Catálogo</a></li>
-            <li><a href="#">Mi cuenta</a></li>
+            <li><a href="iniciar-sesion.html">Mi cuenta</a></li>
             <li>
               <a href="mis-ordenes.html" aria-current="page">Mis órdenes</a>
             </li>
@@ -52,18 +52,16 @@
               <td class="estado">Pendiente</td>
               <td>$648.00</td>
               <td>
-                <a class="enlace-detalle" href="detalle-pedido.html"
-                  >Ver detalle</a
-                >
+                <a class="enlace-detalle" href="detalle-pedido.html">Ver detalle</a>
               </td>
             </tr>
             <tr>
               <td class="orden-id">#10018</td>
               <td>26 sep 2026</td>
-              <td>Drácula</td>
+              <td>Drácula · Digital</td>
               <td class="estado">Entregado</td>
               <td>$279.00</td>
-              <td><a class="enlace-detalle" href="#">Ver detalle</a></td>
+              <td><a class="enlace-detalle" href="#">Descargar</a></td>
             </tr>
             <tr>
               <td class="orden-id">#10010</td>
@@ -71,7 +69,9 @@
               <td>Dune</td>
               <td class="estado">Procesando</td>
               <td>$349.00</td>
-              <td><a class="enlace-detalle" href="#">Ver detalle</a></td>
+              <td>
+                <a class="enlace-detalle" href="detalle-pedido.html">Ver detalle</a>
+              </td>
             </tr>
             <tr>
               <td class="orden-id">#10004</td>
@@ -79,7 +79,9 @@
               <td>Fundación</td>
               <td class="estado">Cancelado</td>
               <td>$319.00</td>
-              <td><a class="enlace-detalle" href="#">Ver detalle</a></td>
+              <td>
+                <a class="enlace-detalle" href="detalle-pedido.html">Ver detalle</a>
+              </td>
             </tr>
           </tbody>
         </table>
@@ -93,7 +95,7 @@
           <a href="index.html">Inicio</a> ·
           <a href="catalogo.html">Catálogo</a> ·
           <a href="mis-ordenes.html">Mis órdenes</a> ·
-          <a href="#">Cerrar sesión</a>
+          <a href="index.html">Cerrar sesión</a>
         </nav>
       </div>
     </footer>

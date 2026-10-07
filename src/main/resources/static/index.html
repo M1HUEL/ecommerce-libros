@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Librería Raudskinna</title>
-    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
     <header class="encabezado">
@@ -12,13 +12,13 @@
         <a class="logo" href="index.html"
           ><img src="img/logo.png" alt="Librería Raudskinna"
         /></a>
-        <nav aria-label="Principal">
+        <nav>
           <ul class="menu">
-            <li><a href="#" aria-current="page">Inicio</a></li>
-            <li><a href="#">Catálogo</a></li>
-            <li><a href="#">Cuenta</a></li>
-            <li><a href="#">Mis órdenes</a></li>
-            <li><a href="#">Carrito</a></li>
+            <li><a href="index.html" aria-current="page">Inicio</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="iniciar-sesion.html">Cuenta</a></li>
+            <li><a href="mis-ordenes.html">Mis órdenes</a></li>
+            <li><a href="carrito.html">Carrito</a></li>
           </ul>
         </nav>
       </div>
@@ -28,9 +28,11 @@
       <section class="hero">
         <div>
           <p class="hero-etiqueta">Librería Raudskinna</p>
-          <h1>Tu próxima lectura te está esperando</h1>
+          <h1>Historias para todos los lectores</h1>
           <p>Explora nuestro catálogo y encuentra tu próxima lectura.</p>
-          <a class="boton boton-claro" href="#">Explorar catálogo</a>
+          <a class="boton boton-claro" href="catalogo.html">
+            Explorar catálogo
+          </a>
         </div>
         <aside class="hero-tarjeta">
           <h2>Selección editorial</h2>
@@ -41,9 +43,9 @@
       <section class="seccion">
         <h2>Categorías</h2>
         <div class="categorias">
-          <a class="categoria" href="#">Ficción</a>
-          <a class="categoria" href="#">Fantasía</a>
-          <a class="categoria" href="#">Terror</a>
+          <a class="categoria" href="catalogo.html">Ficción</a>
+          <a class="categoria" href="catalogo.html">Fantasía</a>
+          <a class="categoria" href="catalogo.html">Terror</a>
         </div>
       </section>
 
@@ -51,8 +53,10 @@
         <h2>Novedades y destacados</h2>
         <ul class="libros">
           <li class="libro">
-            <div class="portada">PORTADA</div>
-            <h3>Dune</h3>
+            <a href="detalle-libro.html" class="enlace-libro">
+              <div class="portada">PORTADA</div>
+              <h3>Dune</h3>
+            </a>
             <p class="autor">Frank Herbert</p>
             <p class="precio">$349.00</p>
             <button class="boton boton-primario">Agregar</button>
@@ -86,8 +90,9 @@
       <div class="contenedor">
         <span>Librería Raudskinna</span>
         <nav aria-label="Pie de página">
-          <a href="#">Inicio</a> · <a href="#">Catálogo</a> ·
-          <a href="#">Carrito</a>
+          <a href="index.html">Inicio</a> ·
+          <a href="catalogo.html">Catálogo</a> ·
+          <a href="carrito.html">Carrito</a>
         </nav>
       </div>
     </footer>

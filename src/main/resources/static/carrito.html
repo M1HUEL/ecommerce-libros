@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Tu carrito · Librería Raudskinna</title>
-    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
     <header class="encabezado">
@@ -16,8 +16,8 @@
           <ul class="menu">
             <li><a href="index.html">Inicio</a></li>
             <li><a href="catalogo.html">Catálogo</a></li>
-            <li><a href="#">Cuenta</a></li>
-            <li><a href="#">Mis órdenes</a></li>
+            <li><a href="iniciar-sesion.html">Cuenta</a></li>
+            <li><a href="mis-ordenes.html">Mis órdenes</a></li>
             <li><a href="carrito.html" aria-current="page">Carrito</a></li>
           </ul>
         </nav>
@@ -36,7 +36,7 @@
             <div class="portada">PORTADA</div>
             <div>
               <h3>Dune</h3>
-              <p class="autor">Frank Herbert</p>
+              <p class="autor">Frank Herbert · Pasta blanda</p>
               <p class="precio">$349.00</p>
               <div class="cantidad">
                 <button
@@ -66,7 +66,7 @@
             <div class="portada">PORTADA</div>
             <div>
               <h3>El Hobbit</h3>
-              <p class="autor">J. R. R. Tolkien</p>
+              <p class="autor">J. R. R. Tolkien · Pasta dura</p>
               <p class="precio">$299.00</p>
               <div class="cantidad">
                 <button
@@ -105,9 +105,9 @@
           <div class="resumen-fila resumen-total">
             <span>Total</span><span id="total">$648.00</span>
           </div>
-          <button class="boton boton-primario" type="button">
+          <a class="boton boton-primario" href="checkout.html">
             Continuar al checkout
-          </button>
+          </a>
         </aside>
       </div>
     </main>

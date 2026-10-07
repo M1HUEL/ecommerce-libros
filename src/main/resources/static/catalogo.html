@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Catálogo · Librería Raudskinna</title>
-    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
     <header class="encabezado">
@@ -16,9 +16,9 @@
           <ul class="menu">
             <li><a href="index.html">Inicio</a></li>
             <li><a href="catalogo.html" aria-current="page">Catálogo</a></li>
-            <li><a href="#">Cuenta</a></li>
-            <li><a href="#">Mis órdenes</a></li>
-            <li><a href="#">Carrito</a></li>
+            <li><a href="iniciar-sesion.html">Cuenta</a></li>
+            <li><a href="mis-ordenes.html">Mis órdenes</a></li>
+            <li><a href="carrito.html">Carrito</a></li>
           </ul>
         </nav>
       </div>
@@ -66,8 +66,10 @@
 
       <ul class="libros">
         <li class="libro">
-          <div class="portada">PORTADA</div>
-          <h3>Dune</h3>
+          <a href="detalle-libro.html" class="enlace-libro">
+            <div class="portada">PORTADA</div>
+            <h3>Dune</h3>
+          </a>
           <p class="autor">Frank Herbert</p>
           <p class="precio">$349.00</p>
           <button class="boton boton-primario">Agregar</button>
@@ -114,8 +116,9 @@
       <div class="contenedor">
         <span>Librería Raudskinna</span>
         <nav aria-label="Pie de página">
-          <a href="index.html">Inicio</a> ·
-          <a href="catalogo.html">Catálogo</a> · <a href="#">Carrito</a>
+          <a href="index.html">Inicio</a>
+          <a href="catalogo.html">Catálogo</a>
+          <a href="carrito.html">Carrito</a>
         </nav>
       </div>
     </footer>

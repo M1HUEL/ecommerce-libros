@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Gestionar órdenes · Librería Raudskinna</title>
-    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
     <header class="encabezado">
@@ -14,13 +14,13 @@
         /></a>
         <nav aria-label="Administración">
           <ul class="menu">
-            <li><a href="panel-admin.html">Panel</a></li>
-            <li><a href="admin-libros.html">Libros e inventario</a></li>
+            <li><a href="panel-administrativo.html">Panel</a></li>
+            <li><a href="administrador-libros.html">Libros e inventario</a></li>
             <li>
-              <a href="admin-ordenes.html" aria-current="page">Órdenes</a>
+              <a href="administrador-ordenes.html" aria-current="page">Órdenes</a>
             </li>
             <li><a href="catalogo.html">Catálogo público</a></li>
-            <li><a href="#">Cerrar sesión</a></li>
+            <li><a href="index.html">Cerrar sesión</a></li>
           </ul>
         </nav>
       </div>
@@ -97,7 +97,9 @@
                   <button class="boton boton-claro" type="button">
                     Cancelar
                   </button>
-                  <a class="boton boton-primario" href="#">Ver datos</a>
+                  <a class="boton boton-primario" href="detalle-pedido.html">
+                    Ver datos
+                  </a>
                 </div>
               </td>
             </tr>
@@ -113,7 +115,9 @@
                   <button class="boton boton-primario" type="button">
                     Marcar entregada
                   </button>
-                  <a class="boton boton-primario" href="#">Ver datos</a>
+                  <a class="boton boton-primario" href="detalle-pedido.html">
+                    Ver datos
+                  </a>
                 </div>
               </td>
             </tr>
@@ -127,7 +131,9 @@
               <td>
                 <div class="acciones-tabla">
                   <span class="pildora-final">Estado final</span>
-                  <a class="boton boton-primario" href="#">Ver datos</a>
+                  <a class="boton boton-primario" href="detalle-pedido.html">
+                    Ver datos
+                  </a>
                 </div>
               </td>
             </tr>
@@ -141,7 +147,9 @@
               <td>
                 <div class="acciones-tabla">
                   <span class="pildora-final">Estado final</span>
-                  <a class="boton boton-primario" href="#">Ver datos</a>
+                  <a class="boton boton-primario" href="detalle-pedido.html">
+                    Ver datos
+                  </a>
                 </div>
               </td>
             </tr>
@@ -154,10 +162,10 @@
       <div class="contenedor">
         <span>Librería Raudskinna · Administración</span>
         <nav aria-label="Pie de página">
-          <a href="panel-admin.html">Panel</a> ·
-          <a href="admin-libros.html">Libros</a> ·
-          <a href="admin-ordenes.html">Órdenes</a> ·
-          <a href="#">Cerrar sesión</a>
+          <a href="panel-administrativo.html">Panel</a> ·
+          <a href="administrador-libros.html">Libros</a> ·
+          <a href="administrador-ordenes.html">Órdenes</a> ·
+          <a href="index.html">Cerrar sesión</a>
         </nav>
       </div>
     </footer>

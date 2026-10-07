@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Panel administrativo · Librería Raudskinna</title>
-    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
     <header class="encabezado">
@@ -14,11 +14,11 @@
         /></a>
         <nav aria-label="Administración">
           <ul class="menu">
-            <li><a href="panel-admin.html" aria-current="page">Panel</a></li>
-            <li><a href="#">Libros e inventario</a></li>
-            <li><a href="#">Órdenes</a></li>
+            <li><a href="panel-administrativo.html" aria-current="page">Panel</a></li>
+            <li><a href="administrador-libros.html">Libros e inventario</a></li>
+            <li><a href="administrador-ordenes.html">Órdenes</a></li>
             <li><a href="catalogo.html">Catálogo público</a></li>
-            <li><a href="#">Cerrar sesión</a></li>
+            <li><a href="index.html">Cerrar sesión</a></li>
           </ul>
         </nav>
       </div>
@@ -36,14 +36,18 @@
           <h2>Libros e inventario</h2>
           <p class="admin-dato">24 libros · 3 con stock bajo</p>
           <p>Alta, edición, consulta y existencias del catálogo.</p>
-          <a class="boton boton-primario" href="#">Gestionar</a>
+          <a class="boton boton-primario" href="administrador-libros.html">
+            Gestionar
+          </a>
         </section>
 
         <section class="panel admin-tarjeta">
           <h2>Órdenes</h2>
           <p class="admin-dato">5 nuevas</p>
           <p>Revisa pedidos y actualiza su estado.</p>
-          <a class="boton boton-primario" href="#">Gestionar</a>
+          <a class="boton boton-primario" href="administrador-ordenes.html">
+            Gestionar
+          </a>
         </section>
       </div>
     </main>
@@ -52,8 +56,10 @@
       <div class="contenedor">
         <span>Librería Raudskinna · Administración</span>
         <nav aria-label="Pie de página">
-          <a href="panel-admin.html">Panel</a> · <a href="#">Libros</a> ·
-          <a href="#">Órdenes</a> · <a href="#">Cerrar sesión</a>
+          <a href="panel-administrativo.html">Panel</a> ·
+          <a href="administrador-libros.html">Libros</a> ·
+          <a href="administrador-ordenes.html">Órdenes</a> ·
+          <a href="index.html">Cerrar sesión</a>
         </nav>
       </div>
     </footer>

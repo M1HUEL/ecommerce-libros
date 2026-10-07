@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Formulario de libro · Librería Raudskinna</title>
-    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
     <header class="encabezado">
@@ -14,15 +14,15 @@
         /></a>
         <nav aria-label="Administración">
           <ul class="menu">
-            <li><a href="panel-admin.html">Panel</a></li>
+            <li><a href="panel-administrativo.html">Panel</a></li>
             <li>
-              <a href="admin-libros.html" aria-current="page"
+              <a href="administrador-libros.html" aria-current="page"
                 >Libros e inventario</a
               >
             </li>
-            <li><a href="#">Órdenes</a></li>
+            <li><a href="administrador-ordenes.html">Órdenes</a></li>
             <li><a href="catalogo.html">Catálogo público</a></li>
-            <li><a href="#">Cerrar sesión</a></li>
+            <li><a href="index.html">Cerrar sesión</a></li>
           </ul>
         </nav>
       </div>
@@ -39,7 +39,7 @@
       </div>
 
       <section class="panel panel-libro">
-        <form class="formulario-libro" action="admin-libros.html">
+        <form class="formulario-libro" action="administrador-libros.html">
           <div class="formulario-columna">
             <div class="formulario-grupo">
               <label for="titulo">Título</label>
@@ -54,41 +54,59 @@
             </div>
             <div class="formulario-grupo">
               <label for="autor">Autor</label>
-              <input
-                class="campo campo-formulario"
-                id="autor"
-                name="autor"
-                type="text"
-                placeholder="Ej. Frank Herbert"
-                required
-              />
+              <select
+                      class="campo campo-formulario"
+                      id="autor"
+                      name="autor"
+                      required
+              >
+                <option value="" selected disabled>Seleccionar autor</option>
+                <option>Frank Herbert</option>
+                <option>J. R. R. Tolkien</option>
+                <option>George Orwell</option>
+                <option>Bram Stoker</option>
+              </select>
+              <button class="boton-alta" type="button">
+                + Agregar nuevo autor
+              </button>
             </div>
+
             <div class="formulario-grupo">
               <label for="editorial">Editorial</label>
-              <input
-                class="campo campo-formulario"
-                id="editorial"
-                name="editorial"
-                type="text"
-                placeholder="Ej. Debolsillo"
-              />
+              <select
+                      class="campo campo-formulario"
+                      id="editorial"
+                      name="editorial"
+                      required
+              >
+                <option value="" selected disabled>Seleccionar editorial</option>
+                <option>Debolsillo</option>
+                <option>Minotauro</option>
+                <option>Austral</option>
+                <option>Penguin Clásicos</option>
+              </select>
+              <button class="boton-alta" type="button">
+                + Agregar nueva editorial
+              </button>
             </div>
+
             <div class="formulario-grupo">
               <label for="categoria">Categoría</label>
               <select
-                class="campo campo-formulario"
-                id="categoria"
-                name="categoria"
-                required
+                      class="campo campo-formulario"
+                      id="categoria"
+                      name="categoria"
+                      required
               >
-                <option value="" selected disabled>
-                  Seleccionar categoría
-                </option>
+                <option value="" selected disabled>Seleccionar categoría</option>
                 <option>Ficción</option>
                 <option>Fantasía</option>
                 <option>Terror</option>
                 <option>Ciencia ficción</option>
               </select>
+              <button class="boton-alta" type="button">
+                + Agregar nueva categoría
+              </button>
             </div>
             <div class="formulario-grupo">
               <label for="isbn">ISBN</label>
@@ -104,6 +122,20 @@
 
           <div class="formulario-columna">
             <div class="formulario-grupo">
+              <label for="formato">Formato</label>
+              <select
+                      class="campo campo-formulario"
+                      id="formato"
+                      name="formato"
+                      required
+              >
+                <option value="" disabled>Seleccionar formato</option>
+                <option selected>Pasta blanda</option>
+                <option>Pasta dura</option>
+                <option>Digital</option>
+              </select>
+            </div>
+            <div class="formulario-grupo">
               <label for="precio">Precio</label>
               <input
                 class="campo campo-formulario"
@@ -117,16 +149,16 @@
               />
             </div>
             <div class="formulario-grupo">
-              <label for="stock">Stock</label>
+              <label for="stock">Stock (solo físico)</label>
               <input
-                class="campo campo-formulario"
-                id="stock"
-                name="stock"
-                type="number"
-                min="0"
-                step="1"
-                placeholder="0"
-                required
+                      class="campo campo-formulario"
+                      id="stock"
+                      name="stock"
+                      type="number"
+                      min="0"
+                      step="1"
+                      placeholder="0"
+                      required
               />
             </div>
             <div class="formulario-grupo">
@@ -155,7 +187,7 @@
             <button class="boton boton-primario" type="submit">
               Guardar libro / cambios
             </button>
-            <a class="boton boton-claro" href="admin-libros.html">Cancelar</a>
+            <a class="boton boton-claro" href="administrador-libros.html">Cancelar</a>
           </div>
         </form>
       </section>
@@ -165,9 +197,10 @@
       <div class="contenedor">
         <span>Librería Raudskinna · Administración</span>
         <nav aria-label="Pie de página">
-          <a href="panel-admin.html">Panel</a> ·
-          <a href="admin-libros.html">Libros</a> · <a href="#">Órdenes</a> ·
-          <a href="#">Cerrar sesión</a>
+          <a href="panel-administrativo.html">Panel</a> ·
+          <a href="administrador-libros.html">Libros</a> ·
+          <a href="administrador-ordenes.html">Órdenes</a> ·
+          <a href="index.html">Cerrar sesión</a>
         </nav>
       </div>
     </footer>
